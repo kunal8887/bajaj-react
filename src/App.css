@@ -1,0 +1,55 @@
+/* App.css */
+
+/* You can add any global styles or customizations here */
+
+body {
+    @apply bg-gray-100; /* Set the background color to match the Tailwind configuration */
+    font-family: 'Inter', sans-serif; /* Optional: Use a custom font */
+  }
+  
+  textarea {
+    resize: none; /* Disable textarea resizing */
+  }
+  
+  button {
+    transition: background-color 0.3s ease; /* Smooth background color transition for button */
+  }
+  
+  /* Custom styles for react-select */
+  .react-select__control {
+    @apply border-gray-300 rounded;
+  }
+  
+  .react-select__multi-value {
+    @apply bg-gray-200;
+  }
+  
+  .react-select__multi-value__label {
+    @apply text-gray-800;
+  }
+  
+  .react-select__multi-value__remove {
+    @apply text-gray-600;
+  }
+  
+  .react-select__multi-value__remove:hover {
+    @apply text-gray-800;
+  }
+  
+  /* Styles for floating label */
+  .focused {
+    @apply -translate-y-4 scale-75;
+  }
+  
+  label {
+    @apply pointer-events-none bg-white px-1;
+  }
+  
+  textarea:focus + label {
+    @apply -translate-y-4 scale-75 text-blue-500;
+  }
+  
+  textarea:not(:placeholder-shown) + label {
+    @apply -translate-y-4 scale-75;
+  }
+  
