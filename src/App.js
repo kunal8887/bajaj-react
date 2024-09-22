@@ -21,7 +21,7 @@ function App() {
             if (!parsedInput.data || !Array.isArray(parsedInput.data)) {
                 throw new Error('Invalid format');
             }
-            const res = await axios.post('https://bajaj-finserv-liart.vercel.app/bfhl', parsedInput);
+            const res = await axios.post('https://bajaj-backend-w7rg.onrender.com/bfhl', parsedInput);
             setResponse(res.data);
             setError('');
         } catch (err) {
